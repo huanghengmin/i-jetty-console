@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<web-app 
+   	xmlns="http://java.sun.com/xml/ns/javaee" 
+   	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+   	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd" 
+   	version="3.0"> 
+
+	<servlet>
+		<servlet-name>CertificateServlet</servlet-name>
+		<servlet-class>org.mortbay.ijetty.console.CertificateServlet</servlet-class>
+	</servlet>
+    <servlet-mapping>
+        <servlet-name>CertificateServlet</servlet-name>
+        <url-pattern>/CertificateServlet</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>LoginServlet</servlet-name>
+        <servlet-class>org.mortbay.ijetty.console.LoginServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>LoginServlet</servlet-name>
+        <url-pattern>/LoginServlet</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>PortForwardServlet</servlet-name>
+        <servlet-class>org.mortbay.ijetty.console.PortForwardServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>PortForwardServlet</servlet-name>
+        <url-pattern>/PortForwardServlet</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>SSLVPNServlet</servlet-name>
+        <servlet-class>org.mortbay.ijetty.console.SSLVPNServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>SSLVPNServlet</servlet-name>
+        <url-pattern>/SSLVPNServlet</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>SystemManagerServlet</servlet-name>
+        <servlet-class>org.mortbay.ijetty.console.SystemManagerServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>SystemManagerServlet</servlet-name>
+        <url-pattern>/SystemManagerServlet</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>SystemStatusServlet</servlet-name>
+        <servlet-class>org.mortbay.ijetty.console.SystemStatusServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>SystemStatusServlet</servlet-name>
+        <url-pattern>/SystemStatusServlet</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>WifiServlet</servlet-name>
+        <servlet-class>org.mortbay.ijetty.console.WifiServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>WifiServlet</servlet-name>
+        <url-pattern>/WifiServlet</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>ApnServlet</servlet-name>
+        <servlet-class>org.mortbay.ijetty.console.ApnServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ApnServlet</servlet-name>
+        <url-pattern>/ApnServlet</url-pattern>
+    </servlet-mapping>
+
+    <welcome-file-list>
+        <welcome-file>login.html</welcome-file>
+    </welcome-file-list>
+
+  <session-config>
+    <session-timeout>0</session-timeout>
+  </session-config>
+</web-app>
